@@ -26,7 +26,7 @@ public class Main {
         manager.subscribe(new BossPhaseObserver(boss));
         DungeonEngine engine = new DungeonEngine(manager);
         EncounterResult result = engine.run(heroes, boss);
-        System.out.println("\n=== RESULT ===");
+        System.out.println("\nRESULT");
         System.out.println("Heroes won: " + result.isHeroesWon());
         System.out.println("Rounds: " + result.getRoundsPlayed());
         System.out.println("Survivors: " + result.getSurvivingHeroes());
